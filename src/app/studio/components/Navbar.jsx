@@ -28,13 +28,10 @@ export default function Navbar() {
           </DrawerHeader>
         </VisuallyHidden>
         <ul className='p-6 flex flex-col gap-4 text-lg'>
-          <li>Главная</li>
+          <li>Main</li>
           <li>Studio</li>
-          <li>School</li>
-          <li>SMM</li>
-          <li>Meets</li>
-          <li>Контакты</li>
-          <li>Политика конфиденциальности</li>
+          <li>Contacts</li>
+          <li>Privacy Policy</li>
         </ul>
         <VisuallyHidden>
           <DrawerFooter>
