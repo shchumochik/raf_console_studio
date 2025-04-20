@@ -84,7 +84,7 @@ export default function Home() {
                     </p>
                     <div className='flex gap-7 justify-center'>
                         <a
-                            href='https://example.com'
+                            href='https://github.com/Raf0707'
                             className='flex flex-col items-center gap-2'
                         >
                             <div className='flex p-4 bg-neutral-50 border dark:bg-neutral-900 dark:border-neutral-800 rounded-[32px]'>
@@ -93,16 +93,7 @@ export default function Home() {
                             <p className='font-medium text-sm'>Github</p>
                         </a>
                         <a
-                            href='https://example.com'
-                            className='flex flex-col items-center gap-2'
-                        >
-                            <div className='flex p-4 bg-neutral-50 border dark:bg-neutral-900 dark:border-neutral-800 rounded-[32px]'>
-                                <Linkedin width={24} height={24} />
-                            </div>
-                            <p className='font-medium text-sm'>Linkedin</p>
-                        </a>
-                        <a
-                            href='https://example.com'
+                            href='mailto:raf_android-dev@mail.ru'
                             className='flex flex-col items-center gap-2'
                         >
                             <div className='flex p-4 bg-neutral-50 border dark:bg-neutral-900 dark:border-neutral-800 rounded-[32px]'>
@@ -111,7 +102,7 @@ export default function Home() {
                             <p className='font-medium text-sm'>Email</p>
                         </a>
                         <a
-                            href='https://example.com'
+                            href='https://t.me/ibn_Rustum'
                             className='flex flex-col items-center gap-2'
                         >
                             <div className='flex p-4 bg-neutral-50 border dark:bg-neutral-900 dark:border-neutral-800 rounded-[32px]'>
