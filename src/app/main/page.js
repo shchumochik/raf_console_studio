@@ -79,7 +79,7 @@ export default function Home() {
           <div className='flex flex-col justify-center gap-6'>
             <p className='font-medium text-lg self-center text-center'>
               If you have any questions or suggestions,
-              <br /> feel free to contact me via:
+              <br /> feel free to contact us via:
             </p>
             <div className='flex gap-7 justify-center'>
               <a

@@ -5,25 +5,55 @@ import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
 import { Moon, Globe } from 'lucide-react';
 import Navbar from '@/components/Navbar';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
+  const pathname = usePathname();
+  const router = useRouter();
 
   const changeTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-    console.log(theme);
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  const navLinks = [
-    { label: 'Main', href: '/' },
-    { label: 'Studio', href: '/studio' },
-    { label: 'Contacts', href: '/contacts' },
-    { label: 'Privacy Policy', href: '/privacy_policy' }, // если нужна
-  ];
+  const toggleLanguage = () => {
+    // Определяем текущий язык по пути
+    const isRussian = pathname.includes('_ru');
+
+    // Получаем базовый путь без языкового суффикса
+    let basePath = pathname;
+    if (isRussian) {
+      basePath = pathname.replace('_ru', '');
+    } else if (pathname !== '/') {
+      // Для английской версии добавляем суффикс _ru
+      basePath = pathname + '_ru';
+    } else {
+      // Для главной страницы
+      basePath = '/ru';
+    }
+
+    // Перенаправляем на соответствующую версию
+    router.push(basePath);
+  };
+
+  // Определяем текущий язык для отображения правильных ссылок
+  const isRussian = pathname.includes('_ru') || pathname === '/ru';
+
+  const navLinks = isRussian
+      ? [
+        { label: 'Главная', href: '/main_ru' },
+        { label: 'Студия', href: '/studio_ru' },
+        { label: 'Проекты', href: '/projects_ru' },
+        { label: 'Контакты', href: '/contacts_ru' },
+        { label: 'Политика Конфиденциальности', href: '/privacy_policy_ru' },
+      ]
+      : [
+        { label: 'Main', href: '/main' },
+        { label: 'Studio', href: '/studio' },
+        { label: 'Projects', href: '/projects' },
+        { label: 'Contacts', href: '/contacts' },
+        { label: 'Privacy Policy', href: '/privacy_policy' },
+      ];
 
   return (
       <header className='bg-dark border-b border-neutral-200 dark:bg-dark dark:border-neutral-800'>
@@ -51,7 +81,13 @@ export default function Header() {
             >
               <Moon />
             </Button>
-            <Button variant='ghost' size='icon' className='rounded-full'>
+            <Button
+                variant='ghost'
+                size='icon'
+                className='rounded-full'
+                onClick={toggleLanguage}
+                title={isRussian ? 'Switch to English' : 'Переключить на русский'}
+            >
               <Globe />
             </Button>
           </div>

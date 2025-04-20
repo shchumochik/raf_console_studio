@@ -2,9 +2,9 @@
 export default function ContactPage() {
     return (
         <div className="max-w-3xl mx-auto mt-24 px-4">
-            <h1 className="text-4xl font-bold mb-6 text-center">Contact Us</h1>
+            <h1 className="text-4xl font-bold mb-6 text-center">Свяжитесь с нами</h1>
             <p className="text-lg  mb-10 text-center">
-                Feel free to reach out to me for collaboration, questions, or just to say hello!
+                Не стесняйтесь обращаться ко мне по вопросам сотрудничества, за вопросами или просто чтобы пообщаться!
             </p>
 
             {/* GitHub */}
