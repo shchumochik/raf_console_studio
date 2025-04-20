@@ -1,6 +1,6 @@
 'use client';
 
-import { Github, Linkedin, Mail, Send } from 'lucide-react';
+import { Github, Mail, Send } from 'lucide-react';
 
 export default function Home() {
     return (
