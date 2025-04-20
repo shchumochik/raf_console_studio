@@ -21,7 +21,7 @@ export default function Header() {
   const navLinks = [
     { label: 'Main', href: '/' },
     { label: 'Studio', href: '/studio' },
-    { label: 'Contacts', href: '/contact' },
+    { label: 'Contacts', href: '/contacts' },
     { label: 'Privacy Policy', href: '/privacy_policy' }, // если нужна
   ];
 
