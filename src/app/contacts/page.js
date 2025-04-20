@@ -27,7 +27,7 @@ export default function ContactPage() {
 
             {/* Telegram */}
             <a
-                href="https://t.me/raf_android_dev"
+                href="https://t.me/ibn_Rustum"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-white shadow-lg rounded-2xl p-8 text-center mb-8 hover:shadow-xl transition"
