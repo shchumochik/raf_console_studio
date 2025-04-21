@@ -1,8 +1,7 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import ContactFormRu from "@/components/layouts_ru/ContactFormRu";
 
 export default function StudioPage() {
     const scrollToForm = () => {
@@ -23,7 +22,7 @@ export default function StudioPage() {
             <section className="flex flex-col md:flex-row gap-8">
                 <div className="bg-white/70 dark:bg-white/5  rounded-2xl shadow-lg p-8 flex-1 space-y-4">
                     <p className="text-lg font-semibold">✅ Доведем проект до окупаемости!</p>
-                    <p>Более 10 лет успешно продвигаем мобильные приложения</p>
+                    <p>Более 5 лет успешно продвигаем мобильные приложения</p>
                     <p className="text-lg font-semibold">✅ Кросплатформенная разработка</p>
                     <p>на Flutter для iOS, Android и Web</p>
                     <p className="text-lg font-semibold">✅ ASO - оптимизация бесплатно</p>
@@ -31,23 +30,23 @@ export default function StudioPage() {
                 </div>
 
                 {/* Form */}
-                <form
-                    id="contact-form"
-                    className="bg-white/70 dark:bg-white/5  rounded-2xl shadow-lg p-8 flex-1 space-y-4"
-                >
-                    <label className="block text-sm font-medium">Ваше имя</label>
-                    <Input placeholder="Введите имя" />
+                <ContactFormRu />
+            </section>
 
-                    <label className="block text-sm font-medium">Контакт для связи (WhatsApp / Telegram)</label>
-                    <Input placeholder="@username или номер телефона" />
+            {/* Marketing Banner */}
+            <section className="text-center space-y-6">
+                <h2 className="text-2xl font-bold">
+                    Не хотите заполнять заявку?<br />
+                </h2>
 
-                    <label className="block text-sm font-medium">Комментарий</label>
-                    <Textarea placeholder="Введите ваш комментарий" rows={5} />
-
-                    <Button type="submit" className="w-full">
-                        Отправить заявку
-                    </Button>
-                </form>
+                <div className="bg-muted text-muted-foreground rounded-2xl p-6 max-w-4xl mx-auto">
+                    <p className="text-lg">
+                        Тогда свяжитесь с нами напрямую и получите бесплатную консультацию и расчет стоимости вне очереди <br/> <br/>
+                        
+                        Telegram: @ibn_Rustum <br/> <br/>
+                        What&#39;s App: +7 916 273 68 56
+                    </p>
+                </div>
             </section>
 
             {/* Mission Section */}
@@ -143,7 +142,7 @@ export default function StudioPage() {
 
                 <div className="bg-muted text-muted-foreground rounded-2xl p-6 max-w-4xl mx-auto">
                     <p className="text-lg">
-                        Более 10 лет занимаемся рекламой мобильных приложений. Работали с такими приложениями, как AliExpress, Badoo, Yandex Taxi, Самокат, Delivery Club и др.
+                        Более 5 лет занимаемся рекламой мобильных приложений. Работали с такими приложениями, как AliExpress, Badoo, Yandex Taxi, Самокат, Delivery Club и др.
                     </p>
                 </div>
             </section>

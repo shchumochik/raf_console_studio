@@ -1,8 +1,7 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import ContactForm from "@/components/layouts/ContactForm";
 
 export default function StudioPage() {
     const scrollToForm = () => {
@@ -22,8 +21,8 @@ export default function StudioPage() {
             {/* Intro Card and Form */}
             <section className="flex flex-col md:flex-row gap-8">
                 <div className="bg-white/70 dark:bg-white/5 rounded-2xl shadow-lg p-8 flex-1 space-y-4">
-                    <p className="text-lg font-semibold">✅ We'll make your project profitable!</p>
-                    <p>Over 10 years of successfully promoting mobile applications</p>
+                    <p className="text-lg font-semibold">✅ We&#39;ll make your project profitable!</p>
+                    <p>Over 5 years of successfully promoting mobile applications</p>
                     <p className="text-lg font-semibold">✅ Cross-platform development</p>
                     <p>with Flutter for iOS, Android and Web</p>
                     <p className="text-lg font-semibold">✅ Free ASO optimization</p>
@@ -31,29 +30,29 @@ export default function StudioPage() {
                 </div>
 
                 {/* Form */}
-                <form
-                    id="contact-form"
-                    className="bg-white/70 dark:bg-white/5 rounded-2xl shadow-lg p-8 flex-1 space-y-4"
-                >
-                    <label className="block text-sm font-medium">Your name</label>
-                    <Input placeholder="Enter your name" />
+                <ContactForm />
+            </section>
 
-                    <label className="block text-sm font-medium">Contact details (WhatsApp / Telegram)</label>
-                    <Input placeholder="@username or phone number" />
+            {/* Marketing Banner */}
+            <section className="text-center space-y-6">
+                <h2 className="text-2xl font-bold">
+                    Don&#39;t want to fill out the form?<br />
+                </h2>
 
-                    <label className="block text-sm font-medium">Comment</label>
-                    <Textarea placeholder="Enter your comment" rows={5} />
+                <div className="bg-muted text-muted-foreground rounded-2xl p-6 max-w-4xl mx-auto">
+                    <p className="text-lg">
+                        Then contact us directly and get a free consultation and cost estimate without waiting. <br/> <br/>
 
-                    <Button type="submit" className="w-full">
-                        Submit application
-                    </Button>
-                </form>
+                        Telegram: @ibn_Rustum <br/> <br/>
+                        What&#39;s App: +7 916 273 68 56
+                    </p>
+                </div>
             </section>
 
             {/* Mission Section */}
             <section className="text-center text-xl font-medium space-y-4">
-                <p>We don't just develop apps - we build your business and establish processes for profit growth.</p>
-                <p>Our goal is your app's profitability and long-term cooperation.</p>
+                <p>We don&#39;t just develop apps - we build your business and establish processes for profit growth.</p>
+                <p>Our goal is your app&#39;s profitability and long-term cooperation.</p>
             </section>
 
             {/* 3 Features */}
@@ -137,13 +136,13 @@ export default function StudioPage() {
             {/* Marketing Banner */}
             <section className="text-center space-y-6">
                 <h2 className="text-2xl font-bold">
-                    We'll build and implement an effective advertising strategy for your app:<br />
+                    We&#39;ll build and implement an effective advertising strategy for your app:<br />
                     guaranteeing quick payback and maximum ROI
                 </h2>
 
                 <div className="bg-muted text-muted-foreground rounded-2xl p-6 max-w-4xl mx-auto">
                     <p className="text-lg">
-                        Over 10 years in mobile app advertising. Worked with apps like AliExpress, Badoo, Yandex Taxi, Samokat, Delivery Club and others.
+                        Over 5 years in mobile app advertising. Worked with apps like AliExpress, Badoo, Yandex Taxi, Samokat, Delivery Club and others.
                     </p>
                 </div>
             </section>

@@ -1,6 +1,6 @@
 'use client';
 
-import { Github, Mail, Send } from 'lucide-react';
+import { Github, Mail, Send, MessageSquare } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -75,16 +75,18 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-col justify-center mt-[96px] gap-5'>
-          <p className='font-bold text-3xl self-center'>Contact us</p>
+          <p className='font-bold text-3xl self-center'>Связь с нами</p>
           <div className='flex flex-col justify-center gap-6'>
             <p className='font-medium text-lg self-center text-center'>
-              If you have any questions or suggestions,
-              <br /> feel free to contact us via:
+              Если у вас есть вопросы или предложения,
+              <br /> не стесняйтесь связаться с нами через:
             </p>
             <div className='flex gap-7 justify-center'>
               <a
                   href='https://github.com/Raf0707'
                   className='flex flex-col items-center gap-2'
+                  target='_blank'
+                  rel='noopener noreferrer'
               >
                 <div className='flex p-4 bg-neutral-50 border dark:bg-neutral-900 dark:border-neutral-800 rounded-[32px]'>
                   <Github width={24} height={24} />
@@ -103,13 +105,37 @@ export default function Home() {
               <a
                   href='https://t.me/ibn_Rustum'
                   className='flex flex-col items-center gap-2'
+                  target='_blank'
+                  rel='noopener noreferrer'
               >
                 <div className='flex p-4 bg-neutral-50 border dark:bg-neutral-900 dark:border-neutral-800 rounded-[32px]'>
                   <Send width={24} height={24} />
                 </div>
                 <p className='font-medium text-sm'>Telegram</p>
               </a>
+              <a
+                  href='https://wa.me/79162736856'
+                  className='flex flex-col items-center gap-2'
+                  target='_blank'
+                  rel='noopener noreferrer'
+              >
+                <div className='flex p-4 bg-neutral-50 border dark:bg-neutral-900 dark:border-neutral-800 rounded-[32px]'>
+                  <MessageSquare width={24} height={24} />
+                </div>
+                <p className='font-medium text-sm'>WhatsApp</p>
+              </a>
             </div>
+            <p className='font-medium text-lg self-center text-center mt-4'>
+              WhatsApp: <a href="tel:+79162736856" className="text-blue-600 dark:text-blue-400 hover:underline">+7 916 273 68 56</a>
+            </p>
+
+            <p className='font-medium text-lg self-center text-center mt-4'>
+              Telegram: <a href="https://t.me/ibn_Rustum" className="text-blue-600 dark:text-blue-400 hover:underline">@ibn_Rustum</a>
+            </p>
+
+            <p className='font-medium text-lg self-center text-center mt-4'>
+              Email: <a href="mailto:raf_android-dev@mail.ru" className="text-blue-600 dark:text-blue-400 hover:underline">raf_android-dev@mail.ru</a>
+            </p>
           </div>
         </div>
       </div>
