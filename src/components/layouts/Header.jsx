@@ -78,7 +78,7 @@ export default function Header() {
           href={isRussian ? '/main_ru' : '/'}
           className="text-xl font-bold tracking-tight"
         >
-          Studio<span className="text-primary">.</span>
+          Raf&lt;/&gt;Console Studio<span className="text-primary"></span>
         </Link>
 
         {/* Десктопное меню */}
