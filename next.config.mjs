@@ -1,14 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'export', // Важно для статического экспорта
+    basePath: '/raf_console_studio', // Указываем имя репозитория
+    trailingSlash: true, // Добавляет слеши к URL
     async redirects() {
       return [
         {
           source: '/',
           destination: '/main_ru',
-          permanent: true, // HTTP 308 (постоянный редирект)
+          permanent: true,
         }
       ]
     }
-  };
+  }
   
-  export default nextConfig;
+  export default nextConfig
